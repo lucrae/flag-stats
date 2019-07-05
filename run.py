@@ -1,4 +1,6 @@
 from PIL import Image
+import matplotlib.pyplot as plt
+import numpy as np
 
 def get_colour_frequency(im, tolerance=0.01):
 
@@ -25,13 +27,23 @@ def get_colour_frequency(im, tolerance=0.01):
 
     return colour_frequency
 
-# import image
-im = Image.open('world_flags/jp.png').convert('RGB')
+# # import image
+# im = Image.open('world_flags/jp.png').convert('HSV')
 
-# get ratio
-width, height = im.size
-ratio = round(width / height, 2)
+# # get ratio
+# width, height = im.size
+# ratio = round(width / height, 2)
 
-# get colour frequency
-colour_frequency = get_colour_frequency(im)
-print(colour_frequency)
+# # get colour frequency
+# colour_frequency = get_colour_frequency(im)
+# print(colour_frequency)
+
+# Z = np.random.rand(6, 10)
+
+# fig, (ax0) = plt.subplots(1)
+
+# c = ax0.pcolor(Z)
+# ax0.set_title('Hue-Saturation Distribution')
+
+# # fig.tight_layout()
+# plt.show()

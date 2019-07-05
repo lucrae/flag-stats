@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/lucienraeg/Dev/2019/flag-stats/venv"
+set -gx VIRTUAL_ENV "/home/lucrae/Dev/flag-stats/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
